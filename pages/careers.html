@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers | Vantage Logic</title>
+  <meta name="description" content="Join Vantage Logic — we're hiring IT engineers and marketing specialists." />
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800&display=swap">
+  <link rel="stylesheet" href="../css/main.css" />
+  <style>
+    body { padding-top:64px; }
+    .page-hero { padding-top:var(--sp-xl); padding-bottom:var(--sp-lg); border-bottom:1px solid var(--c-border); }
+    .page-hl { font-family:var(--f-display); font-size:var(--t-hero); font-weight:900; text-transform:uppercase; letter-spacing:-0.045em; line-height:0.92; }
+    .perks-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--c-border); }
+    .perk { padding:var(--sp-md); border-right:1px solid var(--c-border); border-bottom:1px solid var(--c-border); }
+    .perk:nth-child(3n) { border-right:none; }
+    .perk:nth-last-child(-n+3) { border-bottom:none; }
+    .perk-icon { font-size:1.8rem; margin-bottom:0.8rem; }
+    .perk-title { font-family:var(--f-display); font-size:var(--t-md); font-weight:700; margin-bottom:0.5rem; letter-spacing:-0.02em; }
+    .perk-desc { font-size:var(--t-sm); color:var(--c-text-mid); line-height:1.7; }
+    .filter-bar { display:flex; gap:0.5rem; flex-wrap:wrap; }
+    .filter-pill { padding:0.45em 1.1em; border-radius:99px; border:1.5px solid var(--c-border); font-size:var(--t-sm); font-weight:500; color:var(--c-text-mid); cursor:pointer; transition:all 0.2s; background:none; }
+    .filter-pill:hover { border-color:var(--c-text); color:var(--c-text); }
+    .filter-pill.active { background:var(--c-text); border-color:var(--c-text); color:#fff; }
+    .job-row { display:grid; grid-template-columns:1fr auto auto; align-items:center; gap:var(--sp-md); padding:1.6rem 0; border-bottom:1px solid var(--c-border); transition:opacity 0.2s; }
+    .job-row:first-child { border-top:1px solid var(--c-border); }
+    .job-row:hover { opacity:0.55; }
+    .job-title { font-family:var(--f-display); font-size:var(--t-lg); font-weight:700; letter-spacing:-0.02em; }
+    .job-meta { font-size:var(--t-sm); color:var(--c-text-light); margin-top:0.2rem; }
+    .job-type { font-size:var(--t-xs); text-transform:uppercase; letter-spacing:0.08em; color:var(--c-text-light); white-space:nowrap; }
+    .job-apply { font-size:var(--t-sm); font-weight:500; white-space:nowrap; border-bottom:1px solid currentColor; padding-bottom:1px; }
+    .form-grid { display:grid; grid-template-columns:1fr 1fr; gap:0 var(--sp-md); }
+    @media(max-width:900px) {
+      .perks-grid { grid-template-columns:1fr 1fr; }
+      .perk:nth-child(3n) { border-right:1px solid var(--c-border); }
+      .perk:nth-child(even) { border-right:none; }
+      .job-row { grid-template-columns:1fr auto; }
+      .job-type { display:none; }
+    }
+    @media(max-width:600px) {
+      .perks-grid { grid-template-columns:1fr; }
+      .perk { border-right:none !important; }
+      .form-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+<div id="page-loader"><div class="loader-inner"><div style="font-family:Archivo,sans-serif;font-weight:900;font-size:1.2rem;letter-spacing:0.05em;color:#111;">VANTAGE LOGIC</div><div class="loader-track"><div class="loader-fill"></div></div></div></div>
+<div id="scroll-progress"></div>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><img src="../assets/images/logo.png" alt="Vantage Logic" /></a>
+    <ul class="nav-links">
+            <li class="has-dd"><a href="#">What we do</a>
+        <div class="nav-dd">
+          <a href="brand-media.html">Brand &amp; Media</a>
+          <a href="paid-ads.html">Paid Ads</a>
+          <a href="ecommerce.html">E-Commerce</a>
+          <a href="web-software.html">Web &amp; Software</a>
+        </div>
+      </li>
+      <li><a href="work.html">Work</a></li>
+      <li class="active"><a href="careers.html">Careers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right"><a href="contact.html" class="nav-cta">Get in touch</a><button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div>
+  </div>
+</nav>
+<div id="mobile-menu">
+    <a href="brand-media.html">Brand &amp; Media</a>
+  <a href="paid-ads.html">Paid Ads</a>
+  <a href="ecommerce.html">E-Commerce</a>
+  <a href="web-software.html">Web &amp; Software</a><a href="work.html">Work</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a>
+  <a href="contact.html" class="mob-cta">Get in touch →</a>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="upper light" style="margin-bottom:1rem;" data-reveal>Join the team</p>
+    <h1 class="page-hl" data-reveal style="transition-delay:0.08s;">Do the best work of your career.</h1>
+    <p style="max-width:500px;color:var(--c-text-mid);line-height:1.7;margin-top:var(--sp-md);" data-reveal style="transition-delay:0.16s;">We're a team of IT engineers and marketing specialists who believe great work comes from genuine expertise, honest collaboration, and the freedom to do things properly.</p>
+  </div>
+</section>
+
+<section class="section border-b off">
+  <div class="wrap">
+    <div style="margin-bottom:var(--sp-md);" data-reveal>
+      <p class="upper light" style="margin-bottom:0.4rem;">Benefits</p>
+      <h2 style="font-family:var(--f-display);font-size:var(--t-2xl);font-weight:900;letter-spacing:-0.04em;text-transform:uppercase;">Life at Vantage Logic</h2>
+    </div>
+    <div class="perks-grid" data-stagger>
+      <div class="perk"><div class="perk-icon">🌍</div><div class="perk-title">Remote-first</div><div class="perk-desc">Work from anywhere. We have a culture built for distributed teams across time zones.</div></div>
+      <div class="perk"><div class="perk-icon">📚</div><div class="perk-title">Learning budget</div><div class="perk-desc">$2,000/year for courses, certifications, and conferences. We invest in your growth.</div></div>
+      <div class="perk"><div class="perk-icon">⏰</div><div class="perk-title">Flexible hours</div><div class="perk-desc">We care about results, not hours. Work when you're at your best.</div></div>
+      <div class="perk"><div class="perk-icon">💰</div><div class="perk-title">Competitive pay</div><div class="perk-desc">Market-rate salaries reviewed annually, with equity for senior hires.</div></div>
+      <div class="perk"><div class="perk-icon">🏥</div><div class="perk-title">Health & wellness</div><div class="perk-desc">Full health, dental, and vision coverage plus a $100/mo wellness stipend.</div></div>
+      <div class="perk"><div class="perk-icon">✈️</div><div class="perk-title">Team off-sites</div><div class="perk-desc">Twice-yearly company retreats. Real time together, somewhere worth being.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section border-b">
+  <div class="wrap">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:var(--sp-md);flex-wrap:wrap;gap:1rem;" data-reveal>
+      <div><p class="upper light" style="margin-bottom:0.4rem;">Open roles</p><h2 style="font-family:var(--f-display);font-size:var(--t-2xl);font-weight:900;letter-spacing:-0.04em;text-transform:uppercase;">Current openings</h2></div>
+      <div class="filter-bar">
+        <button class="filter-pill active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="it">IT</button>
+        <button class="filter-pill" data-filter="marketing">Marketing</button>
+      </div>
+    </div>
+    <div id="jobs-list" data-stagger>
+      <div class="job-row" data-cat="it">
+        <div><div class="job-title">Senior Network Engineer</div><div class="job-meta">Remote · IT</div></div>
+        <span class="job-type">Full-time</span>
+        <a href="#apply" class="job-apply">Apply →</a>
+      </div>
+      <div class="job-row" data-cat="it">
+        <div><div class="job-title">Cybersecurity Analyst</div><div class="job-meta">New York · IT</div></div>
+        <span class="job-type">Full-time</span>
+        <a href="#apply" class="job-apply">Apply →</a>
+      </div>
+      <div class="job-row" data-cat="it">
+        <div><div class="job-title">Cloud Infrastructure Engineer</div><div class="job-meta">Remote · IT</div></div>
+        <span class="job-type">Full-time</span>
+        <a href="#apply" class="job-apply">Apply →</a>
+      </div>
+      <div class="job-row" data-cat="marketing">
+        <div><div class="job-title">Paid Media Strategist</div><div class="job-meta">Remote · Marketing</div></div>
+        <span class="job-type">Full-time</span>
+        <a href="#apply" class="job-apply">Apply →</a>
+      </div>
+      <div class="job-row" data-cat="marketing">
+        <div><div class="job-title">SEO Lead</div><div class="job-meta">Remote · Marketing</div></div>
+        <span class="job-type">Full-time</span>
+        <a href="#apply" class="job-apply">Apply →</a>
+      </div>
+      <div class="job-row" data-cat="marketing">
+        <div><div class="job-title">Content Strategist</div><div class="job-meta">London · Marketing</div></div>
+        <span class="job-type">Full-time</span>
+        <a href="#apply" class="job-apply">Apply →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section border-b" id="apply">
+  <div class="wrap" style="max-width:720px;">
+    <p class="upper light" style="margin-bottom:1rem;" data-reveal>Don't see your role?</p>
+    <h2 style="font-family:var(--f-display);font-size:var(--t-xl);font-weight:900;letter-spacing:-0.03em;text-transform:uppercase;margin-bottom:0.8rem;" data-reveal>Send a spontaneous application.</h2>
+    <p style="color:var(--c-text-mid);margin-bottom:var(--sp-lg);" data-reveal>We're always interested in exceptional IT and marketing talent.</p>
+    <form data-form data-reveal>
+      <div class="form-grid">
+        <div class="form-group"><label class="form-label">First name</label><input class="form-input" type="text" placeholder="Jane" required /></div>
+        <div class="form-group"><label class="form-label">Last name</label><input class="form-input" type="text" placeholder="Smith" required /></div>
+        <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" placeholder="jane@company.com" required /></div>
+        <div class="form-group"><label class="form-label">Role you're interested in</label><input class="form-input" type="text" placeholder="e.g. Senior IT Engineer" /></div>
+      </div>
+      <div class="form-group" style="margin-top:var(--sp-sm);"><label class="form-label">Portfolio / LinkedIn</label><input class="form-input" type="url" placeholder="https://linkedin.com/in/you" /></div>
+      <div class="form-group" style="margin-top:var(--sp-sm);"><label class="form-label">Tell us about yourself</label><textarea class="form-textarea" placeholder="What drives you? What are you best at?" required></textarea></div>
+      <button type="submit" class="btn btn-filled" style="margin-top:var(--sp-md);padding:0.8em 2em;">Send application →</button>
+    </form>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div><img src="../assets/images/logo.png" alt="Vantage Logic" class="footer-logo-img" /><p class="footer-tagline">IT and marketing solutions engineered to move your business forward.</p><a href="contact.html" class="btn btn-outline-white">Start a project →</a></div>
+      <div class="footer-col"><div class="footer-col-label">Solutions</div><ul><li><a href="about.html#it">IT Services</a></li><li><a href="about.html#marketing">Marketing</a></li><li><a href="about.html#cloud">Cloud</a></li><li><a href="about.html#brand">Brand & Creative</a></li></ul></div>
+      <div class="footer-col"><div class="footer-col-label">Company</div><ul><li><a href="about.html">About</a></li><li><a href="work.html">Work</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><div class="footer-col-label">Contact</div><ul><li><a href="mailto:hello@vantagelogic.com">hello@vantagelogic.com</a></li><li><a href="#">New York, NY</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">&copy; 2025 Vantage Logic.</p><div class="footer-socials"><a href="#">LinkedIn</a><a href="#">X</a><a href="#">Instagram</a></div></div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+document.querySelectorAll('.filter-pill').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const val = btn.dataset.filter;
+    document.querySelectorAll('#jobs-list .job-row').forEach(row => {
+      row.style.display = (val === 'all' || row.dataset.cat === val) ? '' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>
