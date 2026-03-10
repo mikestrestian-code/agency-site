@@ -364,7 +364,10 @@ h1,h2,h3,h4,h5 {
     0 24px 56px rgba(0,0,0,0.1),
     0 0 0 1px rgba(74,108,247,0.1);
 }
-.platform-icon svg { width:50%; height:50%; }
+.platform-icon svg, .platform-icon img {
+  width:65%; height:65%; object-fit:contain; border-radius:inherit;
+  display:block; pointer-events:none;
+}
 
 .platform-icon .plat-label {
   position:absolute; bottom:-22px; left:50%; transform:translateX(-50%);
