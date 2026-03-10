@@ -302,14 +302,26 @@ h1,h2,h3,h4,h5 {
   padding:0 var(--gutter);
   position:relative;
   padding-top:var(--nav-h);
+  background-image:url('../assets/images/hero-bg.jpg');
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+/* Dark overlay for text readability */
+.hero::before {
+  content:'';
+  position:absolute; inset:0;
+  background:rgba(0,0,0,0.55);
+  z-index:1;
 }
 .hero .wrap {
   display:flex; flex-direction:column; align-items:center; text-align:center; gap:var(--sp-md);
+  position:relative; z-index:2;
 }
 .hero-headline {
   font-family:var(--f-display); font-size:var(--t-hero);
   font-weight:900; line-height:0.92; letter-spacing:-0.045em;
-  text-transform:uppercase;
+  text-transform:uppercase; color:#fff;
 }
 .hero-headline .accent { color:#4a6cf7; }
 .hero-foot {
@@ -317,10 +329,13 @@ h1,h2,h3,h4,h5 {
   gap:var(--sp-md); flex-wrap:wrap; flex-direction:column;
 }
 .hero-sub {
-  max-width:480px; color:var(--c-text-mid); line-height:1.7;
+  max-width:480px; color:rgba(255,255,255,0.7); line-height:1.7;
   font-size:var(--t-sm); text-align:center;
 }
 .hero-actions { display:flex; gap:0.8rem; flex-wrap:wrap; align-items:center; }
+.hero-actions .link-arr { color:#fff; }
+.hero-actions .btn-outline { border-color:rgba(255,255,255,0.4); color:#fff; }
+.hero-actions .btn-outline:hover { background:#fff; color:#000; }
 
 /* ============================================================
    FEATURED BLOCKS — DEPT 2-col with image
