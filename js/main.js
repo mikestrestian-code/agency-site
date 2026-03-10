@@ -252,6 +252,34 @@ function initCultureScroll() {
   }
 }
 
+/* Hero platform icons — mouse parallax */
+function initHeroParallax() {
+  const hero = document.querySelector('.hero');
+  const icons = document.querySelectorAll('.platform-icon');
+  if (!hero || !icons.length) return;
+
+  hero.addEventListener('mousemove', (e) => {
+    const rect = hero.getBoundingClientRect();
+    const cx = (e.clientX - rect.left) / rect.width - 0.5;  // -0.5 to 0.5
+    const cy = (e.clientY - rect.top) / rect.height - 0.5;
+
+    icons.forEach((icon, i) => {
+      const depth = 0.6 + (i % 3) * 0.25; // vary parallax depth
+      const moveX = cx * 30 * depth;
+      const moveY = cy * 20 * depth;
+      icon.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    });
+  });
+
+  hero.addEventListener('mouseleave', () => {
+    icons.forEach(icon => {
+      icon.style.transition = 'transform 0.6s var(--ease)';
+      icon.style.transform = 'translate(0, 0)';
+      setTimeout(() => { icon.style.transition = ''; }, 600);
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   document.body.classList.add('js-ready');
 
@@ -267,4 +295,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initFilters();
   initHorizontalDrag();
   initCultureScroll();
+  initHeroParallax();
 });
