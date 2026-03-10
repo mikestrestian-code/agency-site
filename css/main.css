@@ -244,7 +244,7 @@ h1,h2,h3,h4,h5 {
   gap:var(--sp-lg); padding-bottom:var(--sp-lg);
   border-bottom:1px solid var(--c-border-dark); margin-bottom:var(--sp-md);
 }
-.footer-logo-img { height:28px; filter:invert(1) brightness(10); margin-bottom:var(--sp-md); }
+.footer-logo-img { height:28px; margin-bottom:var(--sp-md); }
 .footer-tagline { font-size:var(--t-sm); color:rgba(255,255,255,0.45); line-height:1.7; max-width:260px; margin-bottom:var(--sp-md); }
 .footer-col-label { font-size:var(--t-xs); text-transform:uppercase; letter-spacing:0.12em; color:rgba(255,255,255,0.35); margin-bottom:1rem; font-weight:500; }
 .footer-col ul { display:flex; flex-direction:column; gap:0.65rem; }
