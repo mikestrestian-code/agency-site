@@ -365,9 +365,6 @@ h1,h2,h3,h4,h5 {
     0 0 0 1px rgba(74,108,247,0.1);
 }
 .platform-icon svg { width:50%; height:50%; }
-/* Grayscale by default, color on hover */
-.platform-icon svg { filter:grayscale(1) brightness(0.15); transition:filter 0.4s var(--ease); }
-.platform-icon:hover svg { filter:grayscale(0) brightness(1); }
 
 .platform-icon .plat-label {
   position:absolute; bottom:-22px; left:50%; transform:translateX(-50%);
