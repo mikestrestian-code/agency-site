@@ -177,8 +177,15 @@
     </div>
   </div>
   <div class="wrap">
-    <div class="work-scroll-wrap">
-      <div class="work-scroll-track" data-stagger>
+    <div class="work-slider-container">
+      <button class="slider-arrow slider-arrow-left" aria-label="Scroll left" data-slider-arrow="left">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="slider-arrow slider-arrow-right" aria-label="Scroll right" data-slider-arrow="right">
+        <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+      </button>
+      <div class="work-scroll-wrap" id="caseStudySlider">
+        <div class="work-scroll-track" data-stagger>
 
         <a href="#" class="work-card">
           <div class="work-card-img-wrap">
@@ -266,6 +273,7 @@
         </a>
 
       </div>
+    </div>
     </div>
   </div>
 </section>
