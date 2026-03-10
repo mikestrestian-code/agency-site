@@ -151,7 +151,7 @@ h1,h2,h3,h4,h5 {
 
 /* Center: Logo */
 .nav-logo { display:flex; align-items:center; justify-self:center; }
-.nav-logo img { height:22px; }
+.nav-logo img { height:32px; }
 
 /* Right: Contact CTA + Hamburger */
 .nav-right { display:flex; align-items:center; gap:1.2rem; justify-self:end; }
@@ -621,7 +621,7 @@ h1,h2,h3,h4,h5 {
   gap:var(--sp-lg); padding-bottom:var(--sp-lg);
   border-bottom:1px solid var(--c-border-dark); margin-bottom:var(--sp-md);
 }
-.footer-logo-img { height:22px; margin-bottom:var(--sp-md); }
+.footer-logo-img { height:28px; margin-bottom:var(--sp-md); }
 .footer-tagline {
   font-size:var(--t-sm); color:rgba(255,255,255,0.4);
   line-height:1.7; max-width:280px; margin-bottom:var(--sp-md);
